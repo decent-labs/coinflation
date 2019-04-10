@@ -2,9 +2,22 @@
   "name": "coinflation",
   "version": "0.1.0",
   "description": "Publicly mintable and burnable token",
-  "main": "index.js",
-  "repository": "https://github.com/decentorganization/coinflation",
+  "scripts": {
+    "compile": "truffle compile",
+    "console": "truffle console",
+    "test": "npm run compile && scripts/test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/decentorganization/coinflation.git"
+  },
   "author": "Adam Gall <adam@decentcrypto.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "ganache-cli": "^6.4.2",
+    "openzeppelin-test-helpers": "^0.3.1",
+    "truffle": "^5.0.12"
+  }
 }
