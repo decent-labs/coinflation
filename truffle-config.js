@@ -1,4 +1,5 @@
 require('chai/register-should');
+require('dotenv').config();
 
 module.exports = {
   networks: {
