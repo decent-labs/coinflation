@@ -138,7 +138,7 @@ bignumber.js@^7.2.1:
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-7.2.1.tgz#80c048759d826800807c4bfd521e50edbba57a5f"
   integrity sha512-S4XzBk5sMB+Rcb/LNcpzXr57VRTxgAvaAEDAl1AwRx27j00hT84O6OkteE7u8UB3NuaaygCRrEpqox4uDOrbdQ==
 
-bindings@^1.2.1:
+bindings@^1.2.1, bindings@^1.3.1:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
   integrity sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==
@@ -1696,7 +1696,7 @@ nan@2.10.0:
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.10.0.tgz#96d0cd610ebd58d4b4de9cc0c6828cda99c7548f"
   integrity sha512-bAdJv7fBLhWC+/Bls0Oza+mvTaNQtP+1RyhhhvD95pgUJz6XM5IzgmxOkItJ9tkoCiplvAnXI1tNmmUD/eScyA==
 
-nan@^2.0.8, nan@^2.2.1, nan@^2.3.3:
+nan@^2.0.8, nan@^2.11.0, nan@^2.2.1, nan@^2.3.3:
   version "2.13.2"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.13.2.tgz#f51dc7ae66ba7d5d55e1e6d4d8092e802c9aefe7"
   integrity sha512-TghvYc72wlMGMVMluVo9WRJc0mB8KxxF/gZ4YYFy7V2ZQX9l7rgbPg7vjS9mt6U5HXODVFVI2bOduCzwOMv/lw==
@@ -2511,6 +2511,15 @@ truffle-error@^0.0.4:
   resolved "https://registry.yarnpkg.com/truffle-error/-/truffle-error-0.0.4.tgz#c3ff027570c26ae1f20db78637902497857f898f"
   integrity sha512-hER0TNR4alBIhUp7SNrZRRiZtM/MBx+xBdM9qXP0tC3YASFmhNAxPuOyB8JDHFRNbDx12K7nvaqmyYGsI5c8BQ==
 
+truffle-hdwallet-provider@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/truffle-hdwallet-provider/-/truffle-hdwallet-provider-1.0.6.tgz#7cda437c9a25bda6bbc5f4ed018e932254ecc867"
+  integrity sha512-cYTG0t9XouLLEBLMjkfHe3s2JO9wrFFVeXEgpW5Ay+8S56isf3LkrAUh0ws9bcYCJ0l7jho9xkaNnakeDqq//Q==
+  dependencies:
+    any-promise "^1.3.0"
+    bindings "^1.3.1"
+    websocket "^1.0.28"
+
 truffle-interface-adapter@^0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/truffle-interface-adapter/-/truffle-interface-adapter-0.1.2.tgz#b544e726a3a0833911ce6dadb1197cef53ad801b"
@@ -2554,7 +2563,7 @@ type-is@~1.6.16:
     media-typer "0.3.0"
     mime-types "~2.1.18"
 
-typedarray-to-buffer@^3.1.2:
+typedarray-to-buffer@^3.1.2, typedarray-to-buffer@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/typedarray-to-buffer/-/typedarray-to-buffer-3.1.5.tgz#a97ee7a9ff42691b9f783ff1bc5112fe3fca9080"
   integrity sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
@@ -2875,6 +2884,16 @@ web3@1.0.0-beta.37:
     web3-net "1.0.0-beta.37"
     web3-shh "1.0.0-beta.37"
     web3-utils "1.0.0-beta.37"
+
+websocket@^1.0.28:
+  version "1.0.28"
+  resolved "https://registry.yarnpkg.com/websocket/-/websocket-1.0.28.tgz#9e5f6fdc8a3fe01d4422647ef93abdd8d45a78d3"
+  integrity sha512-00y/20/80P7H4bCYkzuuvvfDvh+dgtXi5kzDf3UcZwN6boTYaKvsrtZ5lIYm1Gsg48siMErd9M4zjSYfYFHTrA==
+  dependencies:
+    debug "^2.2.0"
+    nan "^2.11.0"
+    typedarray-to-buffer "^3.1.5"
+    yaeti "^0.0.6"
 
 "websocket@git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible":
   version "1.0.26"
