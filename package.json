@@ -2,7 +2,6 @@
   "name": "coinflation",
   "version": "0.1.0",
   "description": "Publicly mintable and burnable token",
-  "main": "index.js",
   "repository": "https://github.com/decentorganization/coinflation",
   "author": "Adam Gall <adam@decentcrypto.com>",
   "license": "MIT",
