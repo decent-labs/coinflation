@@ -9,6 +9,12 @@ module.exports = {
      port: 8545,
      network_id: "*",
     },
+    ropsten: {
+      provider: () => new HDWalletProvider(process.env.SEED, process.env.ROPSTEN_PROVIDER_URL),
+      network_id: 3,
+      gas: 5500000,
+      gasPrice: 5000000000,
+    },
   },
 
   compilers: {
