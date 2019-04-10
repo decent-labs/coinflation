@@ -2,6 +2,11 @@
   "name": "coinflation",
   "version": "0.1.0",
   "description": "Publicly mintable and burnable token",
+  "scripts": {
+    "compile": "truffle compile",
+    "console": "truffle console",
+    "test": "npm run compile && scripts/test.sh"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/decentorganization/coinflation.git"
