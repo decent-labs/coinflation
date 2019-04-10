@@ -2,7 +2,10 @@
   "name": "coinflation",
   "version": "0.1.0",
   "description": "Publicly mintable and burnable token",
-  "repository": "https://github.com/decentorganization/coinflation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/decentorganization/coinflation.git"
+  },
   "author": "Adam Gall <adam@decentcrypto.com>",
   "license": "MIT",
   "private": false
